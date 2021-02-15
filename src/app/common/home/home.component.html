@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="d-flex justify-content-between">
+            <div class="col-md-4">
+                <div id="divCard" class="d-flex flex-wrap justify-content-between">
+                    <div id="card" class="card bg-light card title d-flex flex-column my-2"
+                        *ngFor="let serie of series">
+                        <div class="profile-card-4 text-center"><img src="http://localhost:8082/file/{{producto.id_file}}"
+                                class="img img-responsive">
+                            <div class="profile-content">
+                                <div class="profile-name">{{producto.nombre | uppercase }}</div>
+                                <div class="profile-description">{{codigo_producto}}</div>
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="profile-overview">
+                                            <p>estrellitas</p>
+                                            <h4>nota</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <form class="form" action="">
+                <h2>EDITAR FACTURA</h2><hr><br>
+                <div class="form-group">
+                    <label for="nombre">ID: </label>
+                    <input [(ngModel)]="compra.id" name="id" type="text" class="form-controls" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="factura">Usuario: </label>
+                    <input [(ngModel)]="compra.factura.usuario.id" name="factura" type="text" class="form-controls" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="producto">Producto: </label>
+                    <input [(ngModel)]="compra.producto.id" name="factura" type="text" class="form-controls" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="producto">Factura: </label>
+                    <input [(ngModel)]="compra.factura.id" name="factura" type="text" class="form-controls" readonly>
+                </div>
+                <hr><br>
+                <div class="form-group">
+                    <button class="btn btn-success" (click)="actualizarCompra()">Actualizar</button>
+                    <button class="btn btn-success" (click)="atras()">Atrás</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

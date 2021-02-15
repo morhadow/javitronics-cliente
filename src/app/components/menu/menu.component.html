@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Javitronics</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['home']" routerLinkActive="active">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Tipos de usuarios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" (click)="plistTipousuario()" style="cursor: pointer">Lista de Tipousuario</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Tipos de Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" (click)="plistTipoProducto()" style="cursor: pointer">Lista de Tipos de Productos</a></li>
+                        <li><a class="dropdown-item" (click)="addTipoProducto()" style="cursor: pointer">Agregar Tipos de Productos</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" (click)="plistProducto()" style="cursor: pointer">Lista de Productos</a></li>
+                        <li><a class="dropdown-item" (click)="addProducto()" style="cursor: pointer">Agregar Productos</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['login']" routerLinkActive="active">Login</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>

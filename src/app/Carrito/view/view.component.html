@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <table class="table table-light table-striped table-hover">
+                <thead class="text-center">
+                    <tr>
+                        <th>ID</th>
+                        <th>PRODUCTO</th>
+                        <th>USUARIO</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">{{carrito.id}}</td>
+                        <td class="text-center">{{carrito.producto.id}}</td>
+                        <td class="text-center">{{carrito.usuario.id}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="botonera">
+                <button class="btn">
+                    <span class="material-icons" (click)="editarCarrito(carrito.id)" style="cursor: pointer; vertical-align: middle;">mode_edit</span>
+                </button>
+                <button class="btn">
+                    <span class="material-icons" (click)="eliminarCarrito(carrito.id)" style="vertical-align: middle;">delete</span>
+                </button>
+                <button class="btn">
+                    <span class="material-icons" (click)="atras()" style="vertical-align: middle;">arrow_back</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

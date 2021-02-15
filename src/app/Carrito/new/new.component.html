@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <form class="form" action="">
+                <h2>AGREGAR CARRITO</h2><hr><br>
+                
+                <div class="form-group">
+                    <label for="producto">Producto: </label>
+                    <input [(ngModel)]="carrito.producto.id" name="producto" type="text" class="form-controls" readonly>
+                </div>
+                <<div class="form-group">
+                    <label for="nombre">Usuario: </label>
+                    <input [(ngModel)]="carrito.usuario.id" name="nombre" type="text" class="form-controls">
+                </div>
+                <button class="btn btn-success" (click)="guardarCarrito()">Actualizar</button>
+                <button class="btn btn-success" (click)="atras()">Atrás</button>
+            </form>
+        </div>
+    </div>
+</div>
+

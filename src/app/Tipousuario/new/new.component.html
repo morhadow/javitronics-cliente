@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <form class="form" action="">
+                <h2>AGREGAR TIPO DE USUARIO</h2><hr><br>
+                <div class="form-group">
+                    <label for="nombre">Nombre: </label>
+                    <input [(ngModel)]="tipousuario.nombre" name="nombre" type="text" class="form-controls">
+                </div>
+               
+                <button class="btn btn-success" (click)="guardarTipoUsuario()">Actualizar</button>
+                <button class="btn btn-success" (click)="atras()">Atrás</button>
+            </form>
+        </div>
+    </div>
+</div>
